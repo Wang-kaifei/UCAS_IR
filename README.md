@@ -5,3 +5,12 @@
 考虑到学生的硬件设备不足，老师给了从官方数据中随机抽取的部分样本，使用该数据统一评测。
 ## 数据介绍
 ![image](https://github.com/Wang-kaifei/UCAS_IR/blob/main/IMG/data.png)
+训练数据有：
+>Train Passages 每个片段内容映射成数字(pid)
+>Train Queries 每个查询内容映射成数字(qid)
+>Train Triples 三元组，每一行为(pid, pos_qid, neg_qid)
+测试数据有：
+>Test Queries (查询, qid) 二元组
+>Test TopFile (qid, pid, 查询, 片段) 四元组
+对于每个在Test Queries文件中的查询(qid)，都能在Test TopFile文件中找到一组对应的passage(pid)。
+而这组passage是随机排列的，模型将这组passage按照与该查询的相关度从高到低排序。
