@@ -15,4 +15,7 @@
 >Test TopFile (qid, pid, 查询, 片段) 四元组  
 
 对于每个在Test Queries文件中的查询(qid)，都能在Test TopFile文件中找到一组对应的passage(pid)。  
-而这组passage是随机排列的，模型将这组passage按照与该查询的相关度从高到低排序。  
+而这组passage是随机排列的，模型的功能是将这组passage按照与该查询的相关度从高到低排序。  
+## BM25
+选择BM25模型作为baseline，只用到了Test Queries和Test TopFile文件，具体见BM25文件夹下内容。
+
