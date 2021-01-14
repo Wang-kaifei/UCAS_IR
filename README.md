@@ -14,6 +14,7 @@
 >Test Queries (查询, qid) 二元组  
 >Test TopFile (qid, pid, 查询, 片段) 四元组  
 >Test Qrels 具有固定格式，出现在Test Queries文件中的qid对应多个pid，并给出该pid的rank（得分）。该文件可视为已知答案，用来检测模型输出结果的准确度。
+
 对于每个在Test Queries文件中的查询(qid)，都能在Test TopFile文件中找到一组对应的passage(pid)。  
 而这组passage是随机排列的，模型的功能是将这组passage按照与该查询的相关度从高到低排序。  
 ## BM25
