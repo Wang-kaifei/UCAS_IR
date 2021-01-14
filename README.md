@@ -5,7 +5,7 @@
 考虑到学生的硬件设备不足，老师给了从官方数据中随机抽取的部分样本，使用该数据统一评测。  
 ## 数据介绍
 ![image](https://github.com/Wang-kaifei/UCAS_IR/blob/main/IMG/data.png)
-训练数据有：
+<br>训练数据有：
 >Train Passages 每个片段内容映射成数字(pid)  
 >Train Queries 每个查询内容映射成数字(qid)  
 >Train Triples 三元组，每一行为(pid, pos_qid, neg_qid)  
